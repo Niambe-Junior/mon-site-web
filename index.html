@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site – Accueil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">MonSite</a>
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Bienvenue sur mon site</h1>
+      <p>Un site statique en HTML/CSS, hébergé dans un conteneur Nginx.</p>
+      <a href="apropos.html" class="btn">En savoir plus</a>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h2>🐳 Docker</h2>
+        <p>Le site tourne dans un conteneur isolé et reproductible.</p>
+      </article>
+      <article class="card">
+        <h2>⚡ Nginx</h2>
+        <p>Un serveur web léger et rapide pour servir des fichiers statiques.</p>
+      </article>
+      <article class="card">
+        <h2>📦 Vagrant</h2>
+        <p>Déployé sur une VM Ubuntu provisionnée automatiquement.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MonSite – Servi par Nginx dans Docker</p>
+  </footer>
+</body>
+</html>

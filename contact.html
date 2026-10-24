@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site – Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">MonSite</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>Contact</h1>
+      <p>Un formulaire de démonstration (site statique : aucune donnée n'est envoyée).</p>
+      <form onsubmit="event.preventDefault(); alert('Merci ! (démo statique)');">
+        <label>Nom<input type="text" name="nom" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MonSite – Servi par Nginx dans Docker</p>
+  </footer>
+</body>
+</html>

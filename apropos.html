@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site – À propos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">MonSite</a>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html" class="active">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h1>À propos</h1>
+      <p>Ce site est un exercice pratique : créer un site web statique et l'héberger avec Nginx dans Docker.</p>
+      <h2>Architecture</h2>
+      <ol>
+        <li>Les fichiers HTML/CSS sont copiés dans l'image Docker.</li>
+        <li>Nginx sert ces fichiers depuis <code>/usr/share/nginx/html</code>.</li>
+        <li>Le port 80 du conteneur est exposé sur le port 8080 de la machine.</li>
+      </ol>
+      <h2>Commandes clés</h2>
+      <pre><code>docker build -t mon-site .
+docker run -d --name mon-site -p 8080:80 mon-site</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 MonSite – Servi par Nginx dans Docker</p>
+  </footer>
+</body>
+</html>
